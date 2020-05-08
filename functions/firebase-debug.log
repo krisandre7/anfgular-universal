@@ -1,0 +1,565 @@
+[debug] [2020-05-08T15:57:16.750Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T15:57:16.753Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-08T15:57:16.754Z] CLI Version:   8.2.0
+[debug] [2020-05-08T15:57:16.754Z] Platform:      win32
+[debug] [2020-05-08T15:57:16.754Z] Node Version:  v10.15.3
+[debug] [2020-05-08T15:57:16.756Z] Time:          Fri May 08 2020 11:57:16 GMT-0400 (Bolivia Time)
+[debug] [2020-05-08T15:57:16.756Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T15:57:16.756Z] 
+[debug] [2020-05-08T15:57:16.776Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T15:57:16.777Z] > authorizing via signed-in user
+[debug] [2020-05-08T15:57:16.778Z] [iam] checking project ng-universal-bfabc for permissions ["firebase.projects.get"]
+[debug] [2020-05-08T15:57:16.782Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng-universal-bfabc:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-08T15:57:18.149Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 15:57:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=834","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T15:57:18.151Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc  
+ 
+[debug] [2020-05-08T15:57:18.939Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 15:57:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Kris\Documents\projects\angular-universal'...
+[info] 
+[debug] [2020-05-08T15:57:18.945Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: functions emulator started at http://localhost:5001
+[debug] [2020-05-08T15:57:20.485Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 15:57:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: Watching "C:\Users\Kris\Documents\projects\angular-universal\functions" for Cloud Functions...
+[debug] [2020-05-08T15:57:20.609Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T15:57:20.609Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T15:57:20.609Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T15:57:20.610Z] [worker-~diagnostic~-946826b9-4087-425c-8bee-67cd55fcb21f]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\17876 
+[debug] [2020-05-08T15:57:20.611Z] [worker-~diagnostic~-946826b9-4087-425c-8bee-67cd55fcb21f]: BUSY 
+[info] i  hosting: Serving hosting files from: dist/app/browser
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-05-08T15:57:21.358Z] [runtime-status] [17876] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T15:57:21.360Z] [runtime-status] [17876] Disabled runtime features: undefined 
+[debug] [2020-05-08T15:57:21.364Z] [runtime-status] [17876] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T15:57:21.366Z] [runtime-status] [17876] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T15:57:21.372Z] [runtime-status] [17876] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T15:57:21.430Z] [runtime-status] [17876] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T15:57:21.431Z] [runtime-status] [17876] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T15:57:21.433Z] [runtime-status] [17876] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T15:57:21.433Z] [runtime-status] [17876] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T15:57:21.434Z] [runtime-status] [17876] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module 'C:\Users\Kris\Documents\projects\angular-universal\functions/dist/server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T15:57:21.467Z] [worker-~diagnostic~-946826b9-4087-425c-8bee-67cd55fcb21f]: exited 
+[debug] [2020-05-08T15:57:21.467Z] [worker-~diagnostic~-946826b9-4087-425c-8bee-67cd55fcb21f]: FINISHED 
+[debug] [2020-05-08T15:58:41.469Z] File C:\Users\Kris\Documents\projects\angular-universal\functions\src\index.ts changed, reloading triggers 
+[debug] [2020-05-08T15:58:42.470Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-08T15:58:42.481Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T15:58:42.481Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T15:58:42.481Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T15:58:42.482Z] [worker-~diagnostic~-2d835d25-2fe6-4de5-ae61-fe2fc715a449]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\11964 
+[debug] [2020-05-08T15:58:42.482Z] [worker-~diagnostic~-2d835d25-2fe6-4de5-ae61-fe2fc715a449]: BUSY 
+[debug] [2020-05-08T15:58:43.265Z] [runtime-status] [11964] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T15:58:43.268Z] [runtime-status] [11964] Disabled runtime features: undefined 
+[debug] [2020-05-08T15:58:43.273Z] [runtime-status] [11964] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T15:58:43.275Z] [runtime-status] [11964] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T15:58:43.281Z] [runtime-status] [11964] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T15:58:43.343Z] [runtime-status] [11964] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T15:58:43.344Z] [runtime-status] [11964] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T15:58:43.345Z] [runtime-status] [11964] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T15:58:43.346Z] [runtime-status] [11964] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T15:58:43.346Z] [runtime-status] [11964] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module 'C:\Users\Kris\Documents\projects\angular-universal\functions/dist/server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T15:58:43.382Z] [worker-~diagnostic~-2d835d25-2fe6-4de5-ae61-fe2fc715a449]: exited 
+[debug] [2020-05-08T15:58:43.383Z] [worker-~diagnostic~-2d835d25-2fe6-4de5-ae61-fe2fc715a449]: FINISHED 
+[debug] [2020-05-08T15:58:47.913Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T15:58:47.916Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-08T15:58:47.916Z] CLI Version:   8.2.0
+[debug] [2020-05-08T15:58:47.917Z] Platform:      win32
+[debug] [2020-05-08T15:58:47.917Z] Node Version:  v10.15.3
+[debug] [2020-05-08T15:58:47.918Z] Time:          Fri May 08 2020 11:58:47 GMT-0400 (Bolivia Time)
+[debug] [2020-05-08T15:58:47.918Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T15:58:47.918Z] 
+[debug] [2020-05-08T15:58:47.929Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T15:58:47.930Z] > authorizing via signed-in user
+[debug] [2020-05-08T15:58:47.930Z] [iam] checking project ng-universal-bfabc for permissions ["firebase.projects.get"]
+[debug] [2020-05-08T15:58:47.938Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng-universal-bfabc:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-08T15:58:49.186Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 15:58:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=852","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T15:58:49.187Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc  
+ 
+[debug] [2020-05-08T15:58:50.695Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 15:58:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Kris\Documents\projects\angular-universal'...
+[info] 
+[debug] [2020-05-08T15:58:50.701Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc/webApps/-/config  
+ 
+[debug] [2020-05-08T15:58:51.439Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 15:58:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: dist/app/browser
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Kris\Documents\projects\angular-universal\functions" for Cloud Functions...
+[debug] [2020-05-08T15:58:51.734Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T15:58:51.734Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T15:58:51.734Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T15:58:51.735Z] [worker-~diagnostic~-5edc3530-ad03-4ebc-920f-9faae3e9cc5f]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\18580 
+[debug] [2020-05-08T15:58:51.735Z] [worker-~diagnostic~-5edc3530-ad03-4ebc-920f-9faae3e9cc5f]: BUSY 
+[debug] [2020-05-08T15:58:52.340Z] [runtime-status] [18580] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T15:58:52.343Z] [runtime-status] [18580] Disabled runtime features: undefined 
+[debug] [2020-05-08T15:58:52.349Z] [runtime-status] [18580] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T15:58:52.351Z] [runtime-status] [18580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T15:58:52.359Z] [runtime-status] [18580] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T15:58:52.444Z] [runtime-status] [18580] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T15:58:52.445Z] [runtime-status] [18580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T15:58:52.447Z] [runtime-status] [18580] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T15:58:52.448Z] [runtime-status] [18580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T15:58:52.449Z] [runtime-status] [18580] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module 'C:\Users\Kris\Documents\projects\angular-universal\functions/dist/server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T15:58:52.484Z] [worker-~diagnostic~-5edc3530-ad03-4ebc-920f-9faae3e9cc5f]: exited 
+[debug] [2020-05-08T15:58:52.484Z] [worker-~diagnostic~-5edc3530-ad03-4ebc-920f-9faae3e9cc5f]: FINISHED 
+[debug] [2020-05-08T16:00:25.119Z] File C:\Users\Kris\Documents\projects\angular-universal\functions\src\index.ts changed, reloading triggers 
+[debug] [2020-05-08T16:00:26.121Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-08T16:00:26.131Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T16:00:26.131Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T16:00:26.131Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T16:00:26.131Z] [worker-~diagnostic~-74b84742-79a9-4502-8c87-0130ab28b885]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\12200 
+[debug] [2020-05-08T16:00:26.131Z] [worker-~diagnostic~-74b84742-79a9-4502-8c87-0130ab28b885]: BUSY 
+[debug] [2020-05-08T16:00:31.832Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:00:31.835Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-08T16:00:31.835Z] CLI Version:   8.2.0
+[debug] [2020-05-08T16:00:31.835Z] Platform:      win32
+[debug] [2020-05-08T16:00:31.835Z] Node Version:  v10.15.3
+[debug] [2020-05-08T16:00:31.837Z] Time:          Fri May 08 2020 12:00:31 GMT-0400 (Bolivia Time)
+[debug] [2020-05-08T16:00:31.837Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:00:31.837Z] 
+[debug] [2020-05-08T16:00:31.848Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T16:00:31.849Z] > authorizing via signed-in user
+[debug] [2020-05-08T16:00:31.849Z] [iam] checking project ng-universal-bfabc for permissions ["firebase.projects.get"]
+[debug] [2020-05-08T16:00:31.853Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng-universal-bfabc:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-08T16:00:53.739Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:00:53.742Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-08T16:00:53.742Z] CLI Version:   8.2.0
+[debug] [2020-05-08T16:00:53.742Z] Platform:      win32
+[debug] [2020-05-08T16:00:53.742Z] Node Version:  v10.15.3
+[debug] [2020-05-08T16:00:53.744Z] Time:          Fri May 08 2020 12:00:53 GMT-0400 (Bolivia Time)
+[debug] [2020-05-08T16:00:53.744Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:00:53.744Z] 
+[debug] [2020-05-08T16:00:53.755Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T16:00:53.756Z] > authorizing via signed-in user
+[debug] [2020-05-08T16:00:53.756Z] [iam] checking project ng-universal-bfabc for permissions ["firebase.projects.get"]
+[debug] [2020-05-08T16:00:53.760Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng-universal-bfabc:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-08T16:00:55.002Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:00:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=861","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T16:00:55.003Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc  
+ 
+[debug] [2020-05-08T16:00:55.657Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:00:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Kris\Documents\projects\angular-universal'...
+[info] 
+[debug] [2020-05-08T16:00:55.663Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: functions emulator started at http://localhost:5001
+[debug] [2020-05-08T16:00:57.207Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:00:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: Watching "C:\Users\Kris\Documents\projects\angular-universal\functions" for Cloud Functions...
+[debug] [2020-05-08T16:00:57.268Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T16:00:57.268Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T16:00:57.268Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T16:00:57.269Z] [worker-~diagnostic~-5fa5db5b-1890-46f0-9c7f-81ade46f71ec]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\4640 
+[debug] [2020-05-08T16:00:57.269Z] [worker-~diagnostic~-5fa5db5b-1890-46f0-9c7f-81ade46f71ec]: BUSY 
+[info] i  hosting: Serving hosting files from: dist/app/browser
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-05-08T16:00:57.842Z] [runtime-status] [4640] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T16:00:57.844Z] [runtime-status] [4640] Disabled runtime features: undefined 
+[debug] [2020-05-08T16:00:57.848Z] [runtime-status] [4640] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:00:57.850Z] [runtime-status] [4640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:00:57.856Z] [runtime-status] [4640] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T16:00:57.917Z] [runtime-status] [4640] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T16:00:57.918Z] [runtime-status] [4640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:00:57.920Z] [runtime-status] [4640] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:00:57.920Z] [runtime-status] [4640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:00:57.920Z] [runtime-status] [4640] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module 'shelljs'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:4:10)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T16:00:57.944Z] [worker-~diagnostic~-5fa5db5b-1890-46f0-9c7f-81ade46f71ec]: exited 
+[debug] [2020-05-08T16:00:57.944Z] [worker-~diagnostic~-5fa5db5b-1890-46f0-9c7f-81ade46f71ec]: FINISHED 
+[debug] [2020-05-08T16:03:07.478Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:03:07.480Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-08T16:03:07.481Z] CLI Version:   8.2.0
+[debug] [2020-05-08T16:03:07.481Z] Platform:      win32
+[debug] [2020-05-08T16:03:07.481Z] Node Version:  v10.15.3
+[debug] [2020-05-08T16:03:07.482Z] Time:          Fri May 08 2020 12:03:07 GMT-0400 (Bolivia Time)
+[debug] [2020-05-08T16:03:07.483Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:03:07.483Z] 
+[debug] [2020-05-08T16:03:07.495Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T16:03:07.496Z] > authorizing via signed-in user
+[debug] [2020-05-08T16:03:07.496Z] [iam] checking project ng-universal-bfabc for permissions ["firebase.projects.get"]
+[debug] [2020-05-08T16:03:07.500Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng-universal-bfabc:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-08T16:03:08.729Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:03:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=820","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T16:03:08.730Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc  
+ 
+[debug] [2020-05-08T16:03:09.497Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:03:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Kris\Documents\projects\angular-universal'...
+[info] 
+[debug] [2020-05-08T16:03:09.502Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: functions emulator started at http://localhost:5001
+[debug] [2020-05-08T16:03:10.993Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:03:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: Watching "C:\Users\Kris\Documents\projects\angular-universal\functions" for Cloud Functions...
+[debug] [2020-05-08T16:03:11.047Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T16:03:11.047Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T16:03:11.047Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T16:03:11.048Z] [worker-~diagnostic~-49eb7a69-e356-4d26-b7d6-048f593896e9]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\17488 
+[debug] [2020-05-08T16:03:11.048Z] [worker-~diagnostic~-49eb7a69-e356-4d26-b7d6-048f593896e9]: BUSY 
+[info] i  hosting: Serving hosting files from: dist/app/browser
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-05-08T16:03:11.617Z] [runtime-status] [17488] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T16:03:11.619Z] [runtime-status] [17488] Disabled runtime features: undefined 
+[debug] [2020-05-08T16:03:11.623Z] [runtime-status] [17488] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:03:11.625Z] [runtime-status] [17488] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:03:11.631Z] [runtime-status] [17488] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T16:03:11.691Z] [runtime-status] [17488] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T16:03:11.693Z] [runtime-status] [17488] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:03:11.694Z] [runtime-status] [17488] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:03:11.695Z] [runtime-status] [17488] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:03:11.695Z] [runtime-status] [17488] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module 'C:\Users\Kris\Documents\projects\angular-universal\functions/dist/server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:6:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T16:03:11.764Z] [worker-~diagnostic~-49eb7a69-e356-4d26-b7d6-048f593896e9]: exited 
+[debug] [2020-05-08T16:03:11.764Z] [worker-~diagnostic~-49eb7a69-e356-4d26-b7d6-048f593896e9]: FINISHED 
+[debug] [2020-05-08T16:05:07.486Z] File C:\Users\Kris\Documents\projects\angular-universal\functions\src\index.ts changed, reloading triggers 
+[debug] [2020-05-08T16:05:08.488Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-08T16:05:08.500Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T16:05:08.500Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T16:05:08.500Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T16:05:08.501Z] [worker-~diagnostic~-332b7e03-d336-4209-82b6-6f696adf1046]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\3172 
+[debug] [2020-05-08T16:05:08.501Z] [worker-~diagnostic~-332b7e03-d336-4209-82b6-6f696adf1046]: BUSY 
+[debug] [2020-05-08T16:05:09.484Z] [runtime-status] [3172] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T16:05:09.486Z] [runtime-status] [3172] Disabled runtime features: undefined 
+[debug] [2020-05-08T16:05:09.491Z] [runtime-status] [3172] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:05:09.493Z] [runtime-status] [3172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:05:09.498Z] [runtime-status] [3172] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T16:05:09.559Z] [runtime-status] [3172] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T16:05:09.560Z] [runtime-status] [3172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:05:09.562Z] [runtime-status] [3172] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:05:09.562Z] [runtime-status] [3172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:05:09.562Z] [runtime-status] [3172] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module 'C:\Users\Kris\Documents\projects\angular-universal\functions/dist/server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:6:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T16:05:09.638Z] [worker-~diagnostic~-332b7e03-d336-4209-82b6-6f696adf1046]: exited 
+[debug] [2020-05-08T16:05:09.638Z] [worker-~diagnostic~-332b7e03-d336-4209-82b6-6f696adf1046]: FINISHED 
+[debug] [2020-05-08T16:05:40.057Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:05:40.059Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-08T16:05:40.060Z] CLI Version:   8.2.0
+[debug] [2020-05-08T16:05:40.060Z] Platform:      win32
+[debug] [2020-05-08T16:05:40.060Z] Node Version:  v10.15.3
+[debug] [2020-05-08T16:05:40.061Z] Time:          Fri May 08 2020 12:05:40 GMT-0400 (Bolivia Time)
+[debug] [2020-05-08T16:05:40.062Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:05:40.062Z] 
+[debug] [2020-05-08T16:05:40.074Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T16:05:40.075Z] > authorizing via signed-in user
+[debug] [2020-05-08T16:05:40.075Z] [iam] checking project ng-universal-bfabc for permissions ["firebase.projects.get"]
+[debug] [2020-05-08T16:05:40.079Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng-universal-bfabc:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-08T16:05:41.363Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:05:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=875","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T16:05:41.365Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc  
+ 
+[debug] [2020-05-08T16:05:42.225Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:05:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Kris\Documents\projects\angular-universal'...
+[info] 
+[debug] [2020-05-08T16:05:42.231Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc/webApps/-/config  
+ 
+[debug] [2020-05-08T16:05:42.962Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:05:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: dist/app/browser
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Kris\Documents\projects\angular-universal\functions" for Cloud Functions...
+[debug] [2020-05-08T16:05:43.272Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T16:05:43.272Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T16:05:43.272Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T16:05:43.275Z] [worker-~diagnostic~-d9100c70-52f2-47fb-8c3d-786e1379d21e]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\4476 
+[debug] [2020-05-08T16:05:43.277Z] [worker-~diagnostic~-d9100c70-52f2-47fb-8c3d-786e1379d21e]: BUSY 
+[debug] [2020-05-08T16:05:43.827Z] [runtime-status] [4476] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T16:05:43.829Z] [runtime-status] [4476] Disabled runtime features: undefined 
+[debug] [2020-05-08T16:05:43.834Z] [runtime-status] [4476] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:05:43.836Z] [runtime-status] [4476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:05:43.841Z] [runtime-status] [4476] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T16:05:43.923Z] [runtime-status] [4476] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T16:05:43.924Z] [runtime-status] [4476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:05:43.925Z] [runtime-status] [4476] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:05:43.926Z] [runtime-status] [4476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:05:43.926Z] [runtime-status] [4476] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module 'C:\Users\Kris\Documents\projects\angular-universal\functions\dist\server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:6:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T16:05:43.994Z] [worker-~diagnostic~-d9100c70-52f2-47fb-8c3d-786e1379d21e]: exited 
+[debug] [2020-05-08T16:05:43.994Z] [worker-~diagnostic~-d9100c70-52f2-47fb-8c3d-786e1379d21e]: FINISHED 
+[debug] [2020-05-08T16:05:59.855Z] File C:\Users\Kris\Documents\projects\angular-universal\functions\src\index.ts changed, reloading triggers 
+[debug] [2020-05-08T16:06:00.856Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-08T16:06:00.865Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T16:06:00.865Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T16:06:00.865Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T16:06:00.865Z] [worker-~diagnostic~-3c39c712-8c62-4189-b55c-d2e4a5b4b8dd]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\7724 
+[debug] [2020-05-08T16:06:00.865Z] [worker-~diagnostic~-3c39c712-8c62-4189-b55c-d2e4a5b4b8dd]: BUSY 
+[debug] [2020-05-08T16:06:01.598Z] [runtime-status] [7724] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T16:06:01.601Z] [runtime-status] [7724] Disabled runtime features: undefined 
+[debug] [2020-05-08T16:06:01.606Z] [runtime-status] [7724] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:06:01.608Z] [runtime-status] [7724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:06:01.613Z] [runtime-status] [7724] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T16:06:01.677Z] [runtime-status] [7724] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T16:06:01.679Z] [runtime-status] [7724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:06:01.680Z] [runtime-status] [7724] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:06:01.681Z] [runtime-status] [7724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:06:01.681Z] [runtime-status] [7724] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module 'C:\Users\Kris\Documents\projects\angular-universal\functions\dist\server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:6:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T16:06:01.748Z] [worker-~diagnostic~-3c39c712-8c62-4189-b55c-d2e4a5b4b8dd]: exited 
+[debug] [2020-05-08T16:06:01.748Z] [worker-~diagnostic~-3c39c712-8c62-4189-b55c-d2e4a5b4b8dd]: FINISHED 
+[debug] [2020-05-08T16:06:38.523Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:06:38.525Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-08T16:06:38.526Z] CLI Version:   8.2.0
+[debug] [2020-05-08T16:06:38.526Z] Platform:      win32
+[debug] [2020-05-08T16:06:38.526Z] Node Version:  v10.15.3
+[debug] [2020-05-08T16:06:38.527Z] Time:          Fri May 08 2020 12:06:38 GMT-0400 (Bolivia Time)
+[debug] [2020-05-08T16:06:38.528Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:06:38.528Z] 
+[debug] [2020-05-08T16:06:38.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T16:06:38.540Z] > authorizing via signed-in user
+[debug] [2020-05-08T16:06:38.540Z] [iam] checking project ng-universal-bfabc for permissions ["firebase.projects.get"]
+[debug] [2020-05-08T16:06:38.544Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng-universal-bfabc:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-08T16:06:39.823Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:06:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=825","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T16:06:39.825Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc  
+ 
+[debug] [2020-05-08T16:06:41.265Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:06:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Kris\Documents\projects\angular-universal'...
+[info] 
+[debug] [2020-05-08T16:06:41.271Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc/webApps/-/config  
+ 
+[debug] [2020-05-08T16:06:41.982Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:06:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: dist/app/browser
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Kris\Documents\projects\angular-universal\functions" for Cloud Functions...
+[debug] [2020-05-08T16:06:42.301Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T16:06:42.301Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T16:06:42.301Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T16:06:42.302Z] [worker-~diagnostic~-6d19baad-1564-4f7c-90a8-44eaae52f347]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\13616 
+[debug] [2020-05-08T16:06:42.302Z] [worker-~diagnostic~-6d19baad-1564-4f7c-90a8-44eaae52f347]: BUSY 
+[debug] [2020-05-08T16:06:42.866Z] [runtime-status] [13616] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T16:06:42.867Z] [runtime-status] [13616] Disabled runtime features: undefined 
+[debug] [2020-05-08T16:06:42.872Z] [runtime-status] [13616] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:06:42.873Z] [runtime-status] [13616] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:06:42.879Z] [runtime-status] [13616] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T16:06:42.940Z] [runtime-status] [13616] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T16:06:42.942Z] [runtime-status] [13616] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:06:42.943Z] [runtime-status] [13616] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:06:42.944Z] [runtime-status] [13616] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:06:42.944Z] [runtime-status] [13616] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module 'C:\Users\Kris\Documents\projects\angular-universal\functions\dist\app\server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:6:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T16:06:43.011Z] [worker-~diagnostic~-6d19baad-1564-4f7c-90a8-44eaae52f347]: exited 
+[debug] [2020-05-08T16:06:43.012Z] [worker-~diagnostic~-6d19baad-1564-4f7c-90a8-44eaae52f347]: FINISHED 
+[debug] [2020-05-08T16:07:55.678Z] File C:\Users\Kris\Documents\projects\angular-universal\functions\src\index.ts changed, reloading triggers 
+[debug] [2020-05-08T16:07:56.680Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-08T16:07:56.688Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T16:07:56.688Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T16:07:56.688Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T16:07:56.688Z] [worker-~diagnostic~-68a5dae5-115b-4933-b9ec-1c6f845831fa]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\11868 
+[debug] [2020-05-08T16:07:56.688Z] [worker-~diagnostic~-68a5dae5-115b-4933-b9ec-1c6f845831fa]: BUSY 
+[debug] [2020-05-08T16:07:57.461Z] [runtime-status] [11868] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T16:07:57.463Z] [runtime-status] [11868] Disabled runtime features: undefined 
+[debug] [2020-05-08T16:07:57.468Z] [runtime-status] [11868] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:07:57.470Z] [runtime-status] [11868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:07:57.475Z] [runtime-status] [11868] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T16:07:57.540Z] [runtime-status] [11868] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T16:07:57.541Z] [runtime-status] [11868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:07:57.543Z] [runtime-status] [11868] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:07:57.543Z] [runtime-status] [11868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:07:57.543Z] [runtime-status] [11868] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module 'C:\Users\Kris\Documents\projects\angular-universal\functions\dist\app\server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:6:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T16:07:57.620Z] [worker-~diagnostic~-68a5dae5-115b-4933-b9ec-1c6f845831fa]: exited 
+[debug] [2020-05-08T16:07:57.621Z] [worker-~diagnostic~-68a5dae5-115b-4933-b9ec-1c6f845831fa]: FINISHED 
+[debug] [2020-05-08T16:09:02.326Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:09:02.329Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-08T16:09:02.329Z] CLI Version:   8.2.0
+[debug] [2020-05-08T16:09:02.329Z] Platform:      win32
+[debug] [2020-05-08T16:09:02.329Z] Node Version:  v10.15.3
+[debug] [2020-05-08T16:09:02.331Z] Time:          Fri May 08 2020 12:09:02 GMT-0400 (Bolivia Time)
+[debug] [2020-05-08T16:09:02.331Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T16:09:02.331Z] 
+[debug] [2020-05-08T16:09:02.342Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T16:09:02.343Z] > authorizing via signed-in user
+[debug] [2020-05-08T16:09:02.343Z] [iam] checking project ng-universal-bfabc for permissions ["firebase.projects.get"]
+[debug] [2020-05-08T16:09:02.347Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng-universal-bfabc:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-08T16:09:03.034Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:09:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=144","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T16:09:03.036Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc  
+ 
+[debug] [2020-05-08T16:09:03.844Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:09:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Kris\Documents\projects\angular-universal'...
+[info] 
+[debug] [2020-05-08T16:09:03.853Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-universal-bfabc/webApps/-/config  
+ 
+[debug] [2020-05-08T16:09:04.552Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 16:09:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: dist/app/browser
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Kris\Documents\projects\angular-universal\functions" for Cloud Functions...
+[debug] [2020-05-08T16:09:04.895Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-08T16:09:04.895Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-08T16:09:04.896Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-08T16:09:04.896Z] [worker-~diagnostic~-e46590fe-ed1e-4784-ba30-51cd5c257efa]: Assigning socketPath: \\?\pipe\C:\Users\Kris\Documents\projects\angular-universal\functions\7372 
+[debug] [2020-05-08T16:09:04.897Z] [worker-~diagnostic~-e46590fe-ed1e-4784-ba30-51cd5c257efa]: BUSY 
+[debug] [2020-05-08T16:09:05.480Z] [runtime-status] [7372] Functions runtime initialized. {"cwd":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions","node_version":"10.15.3"} 
+[debug] [2020-05-08T16:09:05.482Z] [runtime-status] [7372] Disabled runtime features: undefined 
+[debug] [2020-05-08T16:09:05.489Z] [runtime-status] [7372] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:09:05.491Z] [runtime-status] [7372] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:09:05.496Z] [runtime-status] [7372] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-08T16:09:05.565Z] [runtime-status] [7372] Checked functions.config() {"config":{}} 
+[debug] [2020-05-08T16:09:05.567Z] [runtime-status] [7372] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:09:05.569Z] [runtime-status] [7372] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-08T16:09:05.570Z] [runtime-status] [7372] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-08T16:09:05.570Z] [runtime-status] [7372] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Kris\\Documents\\projects\\angular-universal\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module '../dist/app/server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:508:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (C:\Users\Kris\Documents\projects\angular-universal\functions\lib\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-05-08T16:09:05.599Z] [worker-~diagnostic~-e46590fe-ed1e-4784-ba30-51cd5c257efa]: exited 
+[debug] [2020-05-08T16:09:05.600Z] [worker-~diagnostic~-e46590fe-ed1e-4784-ba30-51cd5c257efa]: FINISHED 

@@ -51,13 +51,13 @@ export const getServerAPIOptions: () => ServerAPIOptions = () => ({
 let requestListener = createApi(getServerAPIOptions());
 
 // Start up the Node server
-const server = createServer((req, res) => {
+export const server = createServer((req, res) => {
   requestListener(req, res);
 });
 
-server.listen(PORT, () => {
-  console.log(`Server listening -- http://localhost:${PORT}`);
-});
+// server.listen(PORT, () => {
+//   console.log(`Server listening -- http://localhost:${PORT}`);
+// });
 
 
 // HMR on server side
@@ -67,13 +67,13 @@ if (module.hot) {
       const { AppServerModule } = require('./app/app.server.module');
       exports.AppServerModule = AppServerModule;
     } catch (err) {
-      console.warn(`[HMR] Cannot update export of AppServerModule. ${err.stack || err.message}`);
+      // console.warn(`[HMR] Cannot update export of AppServerModule. ${err.stack || err.message}`);
     }
 
     try {
       requestListener = require('./api').createApi(getServerAPIOptions());
     } catch (err) {
-      console.warn(`[HMR] Cannot update server api. ${err.stack || err.message}`);
+      // console.warn(`[HMR] Cannot update server api. ${err.stack || err.message}`);
     }
   };
 
